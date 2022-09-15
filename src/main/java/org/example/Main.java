@@ -43,7 +43,7 @@ public class Main {
             } else if (userChoice == 2) { // print db
                 data.printDB();
             } else if (userChoice == 3) { // search function here
-                System.out.println("Enter search parameter");
+                System.out.println("Enter valid search parameter (only name or the known name of the SuperHero");
                 String name = sc.next();
                 SuperHero s = data.findHero(name);
                 if (s != null)
