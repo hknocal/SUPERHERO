@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="71945447-13a2-42f2-aeab-e9768fda683d" name="Changes" comment="added return message to user if search parameter is invalid">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="71945447-13a2-42f2-aeab-e9768fda683d" name="Changes" comment="added all files to repo">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/UserInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +57,7 @@
       <updated>1663238893336</updated>
       <workItem from="1663238894578" duration="670000" />
       <workItem from="1663239597459" duration="724000" />
-      <workItem from="1663240333524" duration="3569000" />
+      <workItem from="1663240333524" duration="5748000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit with working ui to create superheroes, acces db with list of superheroes and terminate function.">
       <created>1663239747825</created>
@@ -98,7 +94,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663243887863</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="added all files to repo">
+      <created>1663243977848</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1663243977848</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -123,7 +126,8 @@
     <MESSAGE value="added search function method to return hero data based on search parameters realName and heroName" />
     <MESSAGE value="clarified search function so that the user is aware of search parameters" />
     <MESSAGE value="added return message to user if search parameter is invalid" />
-    <option name="LAST_COMMIT_MESSAGE" value="added return message to user if search parameter is invalid" />
+    <MESSAGE value="added all files to repo" />
+    <option name="LAST_COMMIT_MESSAGE" value="added all files to repo" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/SuperHeroes$Main.ic" NAME="Main Coverage Results" MODIFIED="1663239351753" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
