@@ -40,10 +40,14 @@ public class Main {
                     data.addHero(realName, heroName, heroPower, heroStrength, creationYear, isHuman);
                 }
 
-            } else if (userChoice == 2) {
+            } else if (userChoice == 2) { // print db
                 data.printDB();
             } else if (userChoice == 3) { // search function here
-                System.out.println();
+                System.out.println("Enter search parameter");
+                String name = sc.next();
+                SuperHero s = data.findHero(name);
+                if (s != null)
+                    System.out.println(s);
             }
 
         } while (userChoice != 9);

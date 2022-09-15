@@ -15,4 +15,15 @@ public class Database {
             }
         }
 
+        public SuperHero findHero(String name) {
+            for (SuperHero hero : superHeroDB) {
+                if(hero.getHeroName().equals(name)) {
+                    return hero;
+                }
+                if(hero.getRealName().equals(name)) {
+                    return hero;
+                }
+            }
+            return null;
+        }
     }
