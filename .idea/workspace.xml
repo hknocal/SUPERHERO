@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="71945447-13a2-42f2-aeab-e9768fda683d" name="Changes" comment="added all files to repo">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/UserInterface.java" afterDir="false" />
+    <list default="true" id="71945447-13a2-42f2-aeab-e9768fda683d" name="Changes" comment="added new userinterface class, moved main code, so that the main class solely initiates ui load">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/UserInterface.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +58,10 @@
       <updated>1663238893336</updated>
       <workItem from="1663238894578" duration="670000" />
       <workItem from="1663239597459" duration="724000" />
-      <workItem from="1663240333524" duration="5748000" />
+      <workItem from="1663240333524" duration="8000000" />
+      <workItem from="1663413136441" duration="554000" />
+      <workItem from="1663586189763" duration="319000" />
+      <workItem from="1663667407450" duration="1456000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit with working ui to create superheroes, acces db with list of superheroes and terminate function.">
       <created>1663239747825</created>
@@ -101,7 +105,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663243977848</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="added new userinterface class, moved main code, so that the main class solely initiates ui load">
+      <created>1663246386329</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1663246386329</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -127,7 +138,8 @@
     <MESSAGE value="clarified search function so that the user is aware of search parameters" />
     <MESSAGE value="added return message to user if search parameter is invalid" />
     <MESSAGE value="added all files to repo" />
-    <option name="LAST_COMMIT_MESSAGE" value="added all files to repo" />
+    <MESSAGE value="added new userinterface class, moved main code, so that the main class solely initiates ui load" />
+    <option name="LAST_COMMIT_MESSAGE" value="added new userinterface class, moved main code, so that the main class solely initiates ui load" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/SuperHeroes$Main.ic" NAME="Main Coverage Results" MODIFIED="1663239351753" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

@@ -3,9 +3,10 @@ package org.example;
 import java.util.Scanner;
 
 public class UserInterface {
+    Scanner sc = new Scanner(System.in);
+    int userChoice;
+
     public void startUI() {
-        Scanner sc = new Scanner(System.in);
-        int userChoice;
 
         // User interface
         Database data = new Database();
@@ -17,7 +18,8 @@ public class UserInterface {
                     3. Search for SuperHero
                     9. Terminate
                     """);
-            userChoice = sc.nextInt();
+
+            userChoice = readUserChoice();
             sc.nextLine();
 
             if (userChoice == 1) {
@@ -54,5 +56,13 @@ public class UserInterface {
             }
 
         } while (userChoice != 9);
+    }
+
+    public int readUserChoice () {
+        while (!sc.hasNextInt()) {
+            String text = sc.next();
+            System.out.println(text + " is not a valid number. Try again.");
+        }
+        return sc.nextInt();
     }
 }
