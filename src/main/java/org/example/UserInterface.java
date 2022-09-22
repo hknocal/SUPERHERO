@@ -5,17 +5,18 @@ import java.util.Scanner;
 public class UserInterface {
     Scanner sc = new Scanner(System.in);
     int userChoice;
+    Database data = new Database();
 
     public void startUI() {
 
         // User interface
-        Database data = new Database();
         do {
             System.out.println("""
                     Welcome to SuperHeroesDB!
                     1. Create SuperHero
                     2. Access the SuperHeroDB
                     3. Search for SuperHero
+                    4. Edit SuperHero
                     9. Terminate
                     """);
 
@@ -53,15 +54,54 @@ public class UserInterface {
                     System.out.println("No SuperHero was found based on your search parameter.");
                 if (s != null)
                     System.out.println(s);
+            } else if (userChoice == 4) {
+                System.out.println("Enter the SuperHero number you would like to edit:");
+                int number = sc.nextInt();
+                sc.nextLine();
+
+                SuperHero editSuperHero = data.searchResult.get(number -1);
+                System.out.println("Edit SuperHero" + editSuperHero);
+                System.out.println("Press ENTER to edit your SuperHero" +
+                        "Press ENTER again to cancel edit");
+                System.out.println("Real name" + editSuperHero.getRealName());
+                String newReal = sc.nextLine();
+                if (!newReal.isEmpty())
+                    editSuperHero.setRealName(newReal);
+
+                System.out.println("SuperHero name" + editSuperHero.getHeroName());
+                String newName = sc.nextLine();
+                if (!newName.isEmpty())
+                    editSuperHero.setHeroName(newName);
+
+                System.out.println("Special power" + editSuperHero.getHeroPower());
+                String newPower = sc.nextLine();
+                if (!newPower.isEmpty())
+                    editSuperHero.setHeroPower(newPower);
+
+                System.out.println("Strength level" + editSuperHero.getHeroStrength());
+                String newStrength = sc.nextLine();
+                if (!newStrength.isEmpty())
+                    editSuperHero.setHeroStrength(Double.parseDouble(newStrength));
+
+                System.out.println("Creation year" + editSuperHero.getCreationYear());
+                String newCreationYear = sc.nextLine();
+                if (!newCreationYear.isEmpty())
+                    editSuperHero.setCreationYear(Integer.parseInt(newCreationYear));
+
+                System.out.println("Human or not" + editSuperHero.getIsHuman());
+                String newHuman = sc.nextLine();
+                if (!newHuman.isEmpty())
+                    editSuperHero.setIsHuman(Boolean.logicalOr(true, false));
             }
 
         } while (userChoice != 9);
-    }
 
-    public int readUserChoice () {
+        }
+
+    public int readUserChoice() {
         while (!sc.hasNextInt()) {
-            String text = sc.next();
-            System.out.println(text + " is not a valid number. Try again.");
+            String failInput = sc.next();
+            System.out.println(failInput + " is not a valid number. Try again.");
         }
         return sc.nextInt();
     }

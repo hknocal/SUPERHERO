@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="71945447-13a2-42f2-aeab-e9768fda683d" name="Changes" comment="added new userinterface class, moved main code, so that the main class solely initiates ui load">
+    <list default="true" id="71945447-13a2-42f2-aeab-e9768fda683d" name="Changes" comment="added user exception to handle non numeric inputs">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Database.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/UserInterface.java" afterDir="false" />
     </list>
@@ -45,7 +46,8 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
 }</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -61,7 +63,11 @@
       <workItem from="1663240333524" duration="8000000" />
       <workItem from="1663413136441" duration="554000" />
       <workItem from="1663586189763" duration="319000" />
-      <workItem from="1663667407450" duration="1456000" />
+      <workItem from="1663667407450" duration="3917000" />
+      <workItem from="1663679423174" duration="1494000" />
+      <workItem from="1663702600362" duration="2129000" />
+      <workItem from="1663704741556" duration="560000" />
+      <workItem from="1663834957113" duration="2521000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit with working ui to create superheroes, acces db with list of superheroes and terminate function.">
       <created>1663239747825</created>
@@ -112,7 +118,21 @@
       <option name="project" value="LOCAL" />
       <updated>1663246386329</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="added user exception to handle non numeric inputs">
+      <created>1663668999514</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1663668999514</updated>
+    </task>
+    <task id="LOCAL-00009" summary="added user exception to handle non numeric inputs">
+      <created>1663670115877</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1663670115877</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -139,7 +159,8 @@
     <MESSAGE value="added return message to user if search parameter is invalid" />
     <MESSAGE value="added all files to repo" />
     <MESSAGE value="added new userinterface class, moved main code, so that the main class solely initiates ui load" />
-    <option name="LAST_COMMIT_MESSAGE" value="added new userinterface class, moved main code, so that the main class solely initiates ui load" />
+    <MESSAGE value="added user exception to handle non numeric inputs" />
+    <option name="LAST_COMMIT_MESSAGE" value="added user exception to handle non numeric inputs" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/SuperHeroes$Main.ic" NAME="Main Coverage Results" MODIFIED="1663239351753" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
