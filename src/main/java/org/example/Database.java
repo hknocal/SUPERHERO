@@ -11,12 +11,6 @@ public class Database {
             superHeroDB.add(data);
         }
 
-        public void printDB() {
-            for (SuperHero hero : superHeroDB) {
-                System.out.println(hero);
-            }
-        }
-
         public ArrayList<SuperHero> getAllSuperHeroes() {
             return superHeroDB;
         }

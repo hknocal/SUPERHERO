@@ -45,7 +45,7 @@ public class UserInterface {
                 }
 
             } else if (userChoice == 2) { // print db
-                data.printDB();
+                displayAllHeroes();
             } else if (userChoice == 3) { // search function here
                 System.out.println("Enter valid search parameter (only name or the known name of the SuperHero)");
                 String name = sc.next();
@@ -104,5 +104,12 @@ public class UserInterface {
             System.out.println(failInput + " is not a valid number. Try again.");
         }
         return sc.nextInt();
+    }
+
+    public void displayAllHeroes() {
+        System.out.println("All superheroes");
+        for (SuperHero i : data.getAllSuperHeroes()) {
+            System.out.println(i);
+        }
     }
 }

@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="71945447-13a2-42f2-aeab-e9768fda683d" name="Changes" comment="added user exception to handle non numeric inputs">
+    <list default="true" id="71945447-13a2-42f2-aeab-e9768fda683d" name="Changes" comment="added edit feature">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Database.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/UserInterface.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -67,7 +65,7 @@
       <workItem from="1663679423174" duration="1494000" />
       <workItem from="1663702600362" duration="2129000" />
       <workItem from="1663704741556" duration="560000" />
-      <workItem from="1663834957113" duration="2521000" />
+      <workItem from="1663834957113" duration="3816000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit with working ui to create superheroes, acces db with list of superheroes and terminate function.">
       <created>1663239747825</created>
@@ -132,7 +130,21 @@
       <option name="project" value="LOCAL" />
       <updated>1663670115877</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="added edit feature">
+      <created>1663840376662</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1663840376662</updated>
+    </task>
+    <task id="LOCAL-00011" summary="added edit feature">
+      <created>1663840395946</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1663840395946</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -160,7 +172,8 @@
     <MESSAGE value="added all files to repo" />
     <MESSAGE value="added new userinterface class, moved main code, so that the main class solely initiates ui load" />
     <MESSAGE value="added user exception to handle non numeric inputs" />
-    <option name="LAST_COMMIT_MESSAGE" value="added user exception to handle non numeric inputs" />
+    <MESSAGE value="added edit feature" />
+    <option name="LAST_COMMIT_MESSAGE" value="added edit feature" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/SuperHeroes$Main.ic" NAME="Main Coverage Results" MODIFIED="1663239351753" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
