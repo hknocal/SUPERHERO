@@ -5,8 +5,7 @@ import java.util.ArrayList;
 public class Database {
     private ArrayList<SuperHero> superHeroDB = new ArrayList<>();
     ArrayList<SuperHero> searchResult = new ArrayList<>();
-
-        public void addHero(String realName, String heroName, String heroPower, double heroStrength, int creationYear, boolean isHuman) {
+    public void addHero(String realName, String heroName, String heroPower, double heroStrength, int creationYear, boolean isHuman) {
             SuperHero data = new SuperHero(realName, heroName, heroPower, heroStrength, creationYear, isHuman);
             superHeroDB.add(data);
         }
@@ -25,11 +24,5 @@ public class Database {
                 }
             }
             return null;
-        }
-
-        public void editSuperHero() {
-            for (int i = 0; i < searchResult.size(); i++) {
-                System.out.println(i++ + ":" + searchResult.get(i));
-            }
         }
     }

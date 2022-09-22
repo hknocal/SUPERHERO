@@ -6,5 +6,3 @@ public class Main {
         ui.startUI();
     }
 }
-//TODO TRY CATCH
-//TODO PRINTDB MED ARRAY, SØGEFUNKTION I ARRAY
