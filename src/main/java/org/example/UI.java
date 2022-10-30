@@ -2,7 +2,7 @@ package org.example;
 
 import java.util.Scanner;
 
-public class UserInterface {
+public class UI {
     Scanner sc = new Scanner(System.in);
     int userChoice;
     Database data = new Database();
@@ -17,6 +17,7 @@ public class UserInterface {
                     2. Access the SuperHeroDB
                     3. Search for SuperHero
                     4. Edit SuperHero
+                    5. Delete SuperHero
                     9. Terminate
                     """);
 
@@ -56,10 +57,14 @@ public class UserInterface {
                     System.out.println(s);
             } else if (userChoice == 4) {
                 System.out.println("Enter the SuperHero number you would like to edit:");
+                for (int i = 0; i < data.getAllSuperHeroes().size(); i++) {
+                    System.out.print("SuperHero ID: ");
+                    System.out.println(i + 1 + "\n" + data.getAllSuperHeroes().get(i));
+                }
                 int number = sc.nextInt();
                 sc.nextLine();
 
-                SuperHero editSuperHero = data.searchResult.get(number -1);
+                SuperHero editSuperHero = data.getAllSuperHeroes().get(number - 1);
                 System.out.println("Edit SuperHero" + editSuperHero);
                 System.out.println("Press ENTER to edit your SuperHero" +
                         "Press ENTER again to cancel edit");
@@ -91,12 +96,23 @@ public class UserInterface {
                 System.out.println("Human or not" + editSuperHero.getIsHuman());
                 String newHuman = sc.nextLine();
                 if (!newHuman.isEmpty())
-                    editSuperHero.setIsHuman(Boolean.logicalOr(true, false));
+                    editSuperHero.setIsHuman(Boolean.parseBoolean(newHuman));
+            } else if (userChoice == 5) {
+                System.out.println("Following SuperHeroes have been registered: ");
+                for (int i = 0 ; i < data.getAllSuperHeroes().size(); i++) {
+                    System.out.println(i + 1 + ":" + data.getAllSuperHeroes().get(i));
+                }
+                System.out.println("Enter the number of the SuperHero you would like to delete:");
+                int number = sc.nextInt();
+                sc.nextLine();
+
+                SuperHero deleteHero = data.getAllSuperHeroes().remove(number - 1);
+                System.out.println("The selected SuperHero has now been deleted");
             }
 
         } while (userChoice != 9);
 
-        }
+    }
 
     public int readUserChoice() {
         while (!sc.hasNextInt()) {
